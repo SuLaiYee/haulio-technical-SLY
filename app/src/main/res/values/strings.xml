@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HAULIO</string>
+    <string name="msg_generic_no_data">No Data To Display</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="signing_in">Signing</string>
+    <string name="title">Haulio</string>
+</resources>

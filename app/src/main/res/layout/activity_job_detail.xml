@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tool:context=".activities.JobOnMapActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title"
+                android:textSize="@dimen/text_regular_3x"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id='@+id/iv_sign_out_job_detail'
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_sign_out" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <fragment
+            android:id="@+id/search_place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_place_autocomplete_fragment"
+            tool:context=".activities.JobOnMapActivity" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rl_bottom_sheet"
+        layout="@layout/bottom_sheet_driver_profile" />
+
+</android.support.design.widget.CoordinatorLayout>

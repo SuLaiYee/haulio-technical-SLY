@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "736934354587",
+    "firebase_url": "https://haulio-technical-sly.firebaseio.com",
+    "project_id": "haulio-technical-sly",
+    "storage_bucket": "haulio-technical-sly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736934354587:android:e4a104110ebc7d983cf03e",
+        "android_client_info": {
+          "package_name": "com.padcmyanmar.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736934354587-q8nkacsvio47nkkaoeg2qhr6i8l09vo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.padcmyanmar.myapplication",
+            "certificate_hash": "dc70b538392dc2636f3091fb58741d971a2e7ae8"
+          }
+        },
+        {
+          "client_id": "736934354587-u3pqtd1ivti99ro79e567a3jq0hmc3tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDajUrDcXgD2Xq7ZP6BfNXlL1X9EkP4Rgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736934354587-u3pqtd1ivti99ro79e567a3jq0hmc3tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

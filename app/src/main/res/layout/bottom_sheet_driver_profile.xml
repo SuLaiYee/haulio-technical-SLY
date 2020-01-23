@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/margin_medium"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_profile_image"
+        android:layout_width="@dimen/profile_img_size"
+        android:layout_height="@dimen/profile_img_size"
+        android:layout_margin="@dimen/margin_medium"
+        android:elevation="1dp"
+        android:src="@drawable/img_person_placeholder" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:layout_toRightOf="@id/iv_user_profile_image"
+        android:text="Kumar"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_job_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_user_name"
+        android:layout_below="@id/tv_user_name"
+        android:text="Job Number: 780993"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular" />
+
+</RelativeLayout>

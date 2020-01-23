@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_sign_up_with_google"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/blue"
+        android:drawableLeft="@drawable/ic_google"
+        android:drawablePadding="@dimen/margin_medium"
+        android:padding="@dimen/margin_medium"
+        android:text=" Sign up With Google  "
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_sign_up_with_google"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_large"
+        android:text="@string/app_name"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold" />
+</RelativeLayout>
