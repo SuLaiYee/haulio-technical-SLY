@@ -22,7 +22,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("62178072212-3ijrcv5difi8chuo3g34jl298jmnc3ud.apps.googleusercontent.com")
+                .requestIdToken("736934354587-vtgn9hq6f78gtk2p5g1q4l6k0eq7mdrb.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
 

@@ -84,6 +84,8 @@ public class AuthActivity extends BaseActivity implements GoogleApiClient.OnConn
 
         if (requestCode == RC_GOOGLE_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            int statusCode = result.getStatus().getStatusCode();
+            Log.d("status code","Fail"+statusCode);
             processGoogleSignInResult(result);
         }
     }
@@ -93,6 +95,8 @@ public class AuthActivity extends BaseActivity implements GoogleApiClient.OnConn
             // Google Sign-In was successful, authenticate with Firebase
             GoogleSignInAccount account = signInResult.getSignInAccount();
             authenticateUserWithGoogleAccount(account);
+
+
         } else {
             // Google Sign-In failed
             Log.e(HaulioPOCApp.LOG_TAG, "Google Sign-In failed.");
